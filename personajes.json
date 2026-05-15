@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "Tamara",
+    "tipo": "Guerrero",
+    "max_vida": 80,
+    "ataque": 13,
+    "defensa": 7,
+    "vida": 80,
+    "cooldown_habilidad": 0,
+    "estados": []
+  },
+  {
+    "nombre": "Roberto",
+    "tipo": "Mago",
+    "max_vida": 55,
+    "ataque": 15,
+    "defensa": 3,
+    "vida": 55,
+    "cooldown_habilidad": 0,
+    "estados": []
+  },
+  {
+    "nombre": "Marta",
+    "tipo": "Arquero",
+    "max_vida": 65,
+    "ataque": 12,
+    "defensa": 4,
+    "vida": 65,
+    "cooldown_habilidad": 0,
+    "estados": []
+  },
+  {
+    "nombre": "Alejandro",
+    "tipo": "Guerrero",
+    "max_vida": 82,
+    "ataque": 12,
+    "defensa": 8,
+    "vida": 82,
+    "cooldown_habilidad": 0,
+    "estados": []
+  }
+]

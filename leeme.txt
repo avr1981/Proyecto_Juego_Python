@@ -1,0 +1,49 @@
+Proyecto de combate por turnos - POO + Tkinter , Roberto Jiménez Paredes 
+
+Cómo ejecutar:
+1. Abre una terminal dentro de esta carpeta.
+2. Ejecuta:
+   py main.py
+   o, en Linux/Mac:
+   python3 main.py
+
+Qué incluye esta versión:
+- Menú de consola completo.
+- Punto 1 del menú: crear personaje desde cero.
+- Selección del tipo de personaje al crear: Guerrero, Mago, Arquero, Pícaro o Clérigo.
+- Cada tipo de personaje está en un archivo diferente:
+  - guerrero.py
+  - mago.py
+  - arquero.py
+  - picaro.py
+  - clerigo.py
+- Clase base común en personaje_base.py.
+- Sistema de estados alterados separado en estados.py.
+- Combate real por turnos en combate.py.
+- Guardado y carga de personajes en personajes.json.
+- GUI ampliada con Tkinter:
+  - crear personajes,
+  - eliminar personajes,
+  - seleccionar dos personajes,
+  - combatir,
+  - ver el registro completo del combate,
+  - guardar y cargar JSON.
+
+Estados alterados incluidos:
+- Veneno: causa daño al inicio del turno.
+- Quemadura: causa daño y reduce el ataque temporalmente.
+- Sangrado: causa daño continuo.
+- Aturdido: impide actuar durante el turno.
+- Escudo: aumenta la defensa temporalmente.
+- Regeneración: cura vida durante varios turnos.
+
+Estructura recomendada del proyecto:
+- main.py: menú principal de consola.
+- personaje_base.py: clase base Personaje.
+- guerrero.py, mago.py, arquero.py, picaro.py, clerigo.py: clases hijas.
+- estados.py: clase Estado y estados predefinidos.
+- combate.py: lógica del combate.
+- storage.py: guardar y cargar JSON.
+- gui.py: interfaz gráfica con Tkinter.
+- personajes.py: archivo puente para importar todos los personajes.
+- personajes.json: datos guardados.
