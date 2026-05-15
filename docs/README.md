@@ -1,33 +1,26 @@
+# Ejercicio de POO - Juego de Combate por Turnos
 
-# Juego de Combate por Turnos con Personajes y Habilidades
+Este proyecto corresponde al penúltimo ejercicio de Programación Orientada a Objetos en Python.  
+Consiste en un juego de combate por turnos donde el usuario puede crear personajes, elegir su tipo y enfrentarlos entre sí utilizando ataques normales y habilidades especiales.
 
-Este proyecto es un juego de combate por turnos desarrollado en Python aplicando Programación Orientada a Objetos.  
-El usuario puede crear personajes, elegir un tipo predefinido, consultar sus estadísticas y enfrentarlos en combates estratégicos.
-
-## Descripción del proyecto
-
-El juego permite crear diferentes tipos de personajes, cada uno con estadísticas, habilidades especiales y comportamientos propios.  
-Durante el combate, los personajes pueden realizar ataques normales o utilizar habilidades especiales, siempre que la recarga de la habilidad lo permita.
-
-El sistema incluye elementos de azar, como ataques críticos, fallos, variación de daño y efectos de estado. Además, los personajes pueden subir de nivel y ganar experiencia tras los combates.
+El proyecto trabaja los principales conceptos de la POO, como clases, objetos, herencia, polimorfismo, encapsulación, constructores y métodos especiales como `__str__`.
 
 ## Funcionalidades principales
 
-- Creación de personajes desde el menú.
-- Selección de tipo de personaje.
-- Combate por turnos entre dos personajes.
-- Ataques normales y habilidades especiales.
-- Sistema de recarga de habilidades.
-- Efectos de estado como veneno, quemadura, congelación, parálisis, sangrado, escudo y regeneración.
-- Sistema de experiencia y niveles.
-- Guardado y carga de personajes en archivos JSON.
-- Guardado del historial de combates.
-- Interfaz gráfica básica con Tkinter.
-- Menú principal ampliable y organizado por funciones.
+- Crear personajes desde el menú principal.
+- Elegir entre distintos tipos de personaje.
+- Ver los personajes creados y sus estadísticas.
+- Iniciar combates por turnos.
+- Usar ataques normales y habilidades especiales.
+- Gestionar recargas de habilidades.
+- Aplicar efectos de estado durante el combate.
+- Guardar y cargar personajes mediante archivos JSON.
+- Guardar historial de combates.
+- Utilizar una interfaz gráfica básica con Tkinter.
 
-## Tipos de personajes incluidos
+## Tipos de personajes
 
-El proyecto incluye cinco tipos de personajes por defecto:
+El juego incluye diferentes clases de personajes, cada una con sus propias estadísticas y habilidades:
 
 - Guerrero
 - Mago
@@ -35,42 +28,21 @@ El proyecto incluye cinco tipos de personajes por defecto:
 - Pícaro
 - Clérigo
 
-Cada tipo hereda de la clase principal `Personaje` y redefine sus estadísticas y habilidades, aplicando herencia y polimorfismo.
+Cada clase hereda de la clase principal `Personaje` y redefine parte de su comportamiento, aplicando polimorfismo.
 
-## Conceptos de POO aplicados
+## Ampliaciones incluidas
 
-En este proyecto se utilizan los siguientes conceptos de Programación Orientada a Objetos:
+Además de los requisitos básicos del ejercicio, se han añadido varias ampliaciones:
 
-- Clases y objetos.
-- Herencia.
-- Polimorfismo.
-- Encapsulación.
-- Constructores `__init__`.
-- Método especial `__str__`.
-- Getters y setters.
-- Validaciones y manejo básico de excepciones.
-- Separación de responsabilidades mediante módulos.
+- Interfaz gráfica con Tkinter.
+- Sistema de experiencia y niveles.
+- Estados alterados avanzados.
+- Historial de combates.
+- Código separado en varios archivos para facilitar futuras ampliaciones.
 
-## Estructura del proyecto
+## Ejecución
 
-```text
-proyecto_combate_mejorado/
-│
-├── main.py
-├── abrir_gui.py
-├── personaje.py
-├── guerrero.py
-├── mago.py
-├── arquero.py
-├── picaro.py
-├── clerigo.py
-├── combate.py
-├── estados.py
-├── storage.py
-├── gui.py
-├── personajes.json
-├── combates.json
-├── documentacion.txt
-├── requirements.txt
-├── arrancar_consola.bat
-└── arrancar_gui.bat
+Para ejecutar el proyecto en consola:
+
+```bash
+py main.py
